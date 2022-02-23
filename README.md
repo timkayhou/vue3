@@ -136,5 +136,39 @@ export default defineConfig({
     }
   }
 })
+```
 
+### Live Server
+
+```PowerShell
+# PowerShell
+vite
+```
+
+### 🛈[Network: use `--host` to expose]
+
+```TypeScript
+# vite.config.ts
+export default defineConfig({
+  server: {
+    host: '0.0.0.0'
+  },
+  build: {
+    target: "esnext",
+    outDir: 'dist',
+    assetsInlineLimit: 100000000,
+    chunkSizeWarningLimit: 100000000,
+    cssCodeSplit: false,
+    brotliSize: false,
+    rollupOptions: {
+      inlineDynamicImports: true,
+      output: {
+        manualChunks: () => 'everything.js',
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  }
+})
 ```
