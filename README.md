@@ -74,7 +74,7 @@ Install [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodeh
 yarn install
 ```
 
-### Build
+### Complication project
 
 ```PowerShell
 # PowerShell
