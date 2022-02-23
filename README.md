@@ -91,7 +91,7 @@ yarn add --dev vite-plugin-singlefile
 ```
 
 ```TypeScript
-# vite.config.ts
+// vite.config.ts
 import { viteSingleFile } from "vite-plugin-singlefile"
 
 export default defineConfig({
@@ -116,7 +116,7 @@ export default defineConfig({
 #### Compile without adding hash code suffix to resource files
 
 ```TypeScript
-# vite.config.ts
+// vite.config.ts
 export default defineConfig({
   build: {
     target: "esnext",
@@ -148,7 +148,7 @@ vite
 ### 🛈[Network: use `--host` to expose]
 
 ```TypeScript
-# vite.config.ts
+// vite.config.ts
 export default defineConfig({
   server: {
     host: '0.0.0.0'
