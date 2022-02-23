@@ -2,7 +2,7 @@
 
 Vue3 project.
 
-## Building development environment
+## Build development environment
 
 Install [Visual Studio Code](https://code.visualstudio.com/Download), [Node.js](https://nodejs.org/zh-cn/download/), [Git](https://git-scm.com/downloads)
 
