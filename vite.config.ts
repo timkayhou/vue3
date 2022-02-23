@@ -15,8 +15,11 @@ export default defineConfig({
     rollupOptions: {
       inlineDynamicImports: true,
       output: {
-        manualChunks: () => "everything.js",
-      },
+        manualChunks: () => 'everything.js',
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
     },
   },
 })
