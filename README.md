@@ -81,19 +81,17 @@ yarn install
 yarn run build
 ```
 
-#### Vue [SFC](https://vuejs.org/guide/scaling-up/sfc.html)(Single File Component)
+#### [Vue [SFC](https://vuejs.org/guide/scaling-up/sfc.html)]
 
-> Vue Single-File Components (aka *.vue files, abbreviated as SFC) is a special file format that allows us to encapsulate the template, logic, and styling of a Vue component in a single file.
-
-- PowerShell
+> [Vue Single-File Components](https://www.npmjs.com/package/vite-plugin-singlefile) (aka *.vue files, abbreviated as SFC) is a special file format that allows us to encapsulate the template, logic, and styling of a Vue component in a single file.
 
 ```PowerShell
+# PowerShell
 yarn add --dev vite-plugin-singlefile
 ```
 
-- vite.config.ts
-
 ```TypeScript
+# vite.config.ts
 import { defineConfig } from "vite"
 import vue from "@vitejs/plugin-vue"
 import { viteSingleFile } from "vite-plugin-singlefile"
