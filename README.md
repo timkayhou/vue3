@@ -92,14 +92,13 @@ yarn add --dev vite-plugin-singlefile
 
 ```TypeScript
 # vite.config.ts
-import { defineConfig } from "vite"
-import vue from "@vitejs/plugin-vue"
 import { viteSingleFile } from "vite-plugin-singlefile"
 
 export default defineConfig({
  plugins: [vue(), viteSingleFile()],
  build: {
   target: "esnext",
+  outDir: 'dist',
   assetsInlineLimit: 100000000,
   chunkSizeWarningLimit: 100000000,
   cssCodeSplit: false,
@@ -112,4 +111,27 @@ export default defineConfig({
   },
  },
 })
+```
+
+#### Compile without adding hash code suffix to resource files
+
+```TypeScript
+# vite.config.ts
+export default defineConfig({
+  build: {
+    cssCodeSplit: false,
+    outDir: 'dist',
+    brotliSize: false,
+    rollupOptions: {
+      inlineDynamicImports: true,
+      output: {
+        manualChunks: () => 'everything.js',
+        entryFileNames: 'assets/[name].js',
+        chunkFileNames: 'assets/[name].js',
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
+  }
+})
+
 ```
