@@ -4,7 +4,7 @@ Vue3 project.
 
 ## Build development environment
 
-Install [Visual Studio Code](https://code.visualstudio.com/Download), [Node.js](https://nodejs.org/zh-cn/download/), [Git](https://git-scm.com/downloads)
+Install [Visual Studio Code](https://code.visualstudio.com/Download), [Node.js](https://nodejs.org/zh-cn/download/), [Git](https://git-scm.com/downloads), [[TortoiseGit](https://tortoisegit.org/download/)]
 
 ## Create a new repository in GitHub
 
