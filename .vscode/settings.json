@@ -1,9 +1,33 @@
 {
+  "cSpell.caseSensitive": true,
+  "cSpell.enableFiletypes": [
+    "!svg",
+    "!dll",
+    "!log",
+  ],
+  "cSpell.ignorePaths": [
+    "package.json",
+    "**/package.json",
+    "yarn.lock",
+    "**/yarn.lock",
+    ".vscode/extensions.json",
+    ".vscode/settings.json",
+    "node_modules",
+    "**/node_modules",
+    "**/node_modules/**",
+    "node_modules/**",
+    "vscode-extension",
+    ".git",
+    ".gitignore",
+    "*ignore",
+    "*rc.json",
+  ],
   "cSpell.words": [
     "Avenir",
     "brotli",
     "esnext",
     "singlefile",
+    "unplugin",
     "vite",
     "vitejs"
   ]
