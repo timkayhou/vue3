@@ -119,8 +119,11 @@ export default defineConfig({
 # vite.config.ts
 export default defineConfig({
   build: {
-    cssCodeSplit: false,
+    target: "esnext",
     outDir: 'dist',
+    assetsInlineLimit: 100000000,
+    chunkSizeWarningLimit: 100000000,
+    cssCodeSplit: false,
     brotliSize: false,
     rollupOptions: {
       inlineDynamicImports: true,
