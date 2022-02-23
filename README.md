@@ -88,7 +88,7 @@ yarn run build
 - PowerShell
 
 ```PowerShell
-npm i -D vite-plugin-singlefile
+yarn add --dev vite-plugin-singlefile
 ```
 
 - vite.config.ts
