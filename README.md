@@ -73,3 +73,10 @@ Install [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodeh
 # PowerShell
 yarn install
 ```
+
+### Build
+
+```PowerShell
+# PowerShell
+yarn run build
+```
