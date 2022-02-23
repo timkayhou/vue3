@@ -66,3 +66,10 @@ yarn create @vitejs/app <project-name> --template vue-ts
 ### Install VS Code extension plugin
 
 Install [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar), [[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)], [[git-commit-plugin](https://marketplace.visualstudio.com/items?itemName=redjue.git-commit-plugin)]
+
+### Install packages
+
+```PowerShell
+# PowerShell
+yarn install
+```
